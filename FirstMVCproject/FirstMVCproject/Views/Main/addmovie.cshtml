@@ -1,0 +1,47 @@
+﻿@model FirstMVCproject.Models.TMovie
+
+@{
+    ViewData["Title"] = "addmovie";
+}
+@*@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <h1>@ViewBag.Message</h1>
+}*@
+
+<h4>TMovie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="addmovie" asp-controller="Main">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Actor" class="control-label"></label>
+                <input asp-for="Actor" class="form-control" />
+                <span asp-validation-for="Actor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Actoress" class="control-label"></label>
+                <input asp-for="Actoress" class="form-control" />
+                <span asp-validation-for="Actoress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie" class="control-label"></label>
+                <input asp-for="Movie" class="form-control" />
+                <span asp-validation-for="Movie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Record" class="btn btn-outline-success" />
+                <input type="button" value="Cancel" class="btn btn-outline-danger" />
+            </div>
+        </form>
+    </div>
+</div>
+<div class="alert alert-dismissible alert-secondary">
+@ViewBag.Message
+    </div>

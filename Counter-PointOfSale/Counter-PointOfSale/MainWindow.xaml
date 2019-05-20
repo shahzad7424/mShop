@@ -1,0 +1,29 @@
+﻿<Window x:Class="Counter_PointOfSale.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Counter_PointOfSale"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFF9F9F9" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="665*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="309*"/>
+            <RowDefinition Height="56*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <TextBox   HorizontalAlignment="Center"  TextWrapping="Wrap"  Width="201" VerticalAlignment="Top"  FontSize="16" BorderThickness="0,0,0,2" ToolTip="James Wiliam" AutomationProperties.HelpText=" " AutomationProperties.IsRequiredForForm="True" Padding="10,20,10,0" Text="hello" FontFamily="MS UI Gothic" Foreground="White" BorderBrush="#FF0C0CE6" Background="{x:Null}" Margin="232,75,232,196"/>
+            <PasswordBox HorizontalAlignment="Center"   BorderBrush="#FF0A37BD" VerticalAlignment="Top" Foreground="#FFFDFDFD" Background="{x:Null}" Padding="10,20,10,0" FontFamily="MS UI Gothic" Password="1245" FontSize="10" UseLayoutRounding="False" BorderThickness="0,0,0,2" Width="201" Margin="232,127,232,144" />
+            <Button Content="Button" HorizontalAlignment="Center"   VerticalAlignment="Top" Width="201" Height="28" BorderThickness="0" FontFamily="Century Gothic" FontSize="16" Background="#FFBF0A0A" Foreground="#FFF9C7C7" Margin="232,222,232,0"/>
+            <Button Content="Button" HorizontalAlignment="Center"   VerticalAlignment="Top" Width="201" Height="28" BorderThickness="0" FontFamily="Century Gothic" FontSize="16" Background="#FF0A0ABF" Foreground="#FFF9C7C7" Margin="232,189,232,0"/>
+        </Grid>
+
+    </Grid>
+</Window>

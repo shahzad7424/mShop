@@ -1,0 +1,54 @@
+﻿@model CRUD2.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="row col-md-6">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Student1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Student1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Class)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+    </dl>
+    <div class="col-md-6" id="tech_dt">
+
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts  {
+<script>
+    $(function () {
+        
+        $('#tech_dt').load('/Teachers/detailsteacher');
+        
+        
+        
+        
+        );
+
+
+</script>
+}
+ 
