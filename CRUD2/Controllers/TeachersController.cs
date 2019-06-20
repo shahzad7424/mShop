@@ -42,6 +42,11 @@ namespace CRUD2.Controllers
 
             return View(teacher);
         }
+        public string showteacher()
+        {
+
+            return "";
+        }
        
 
         // GET: Teachers/Create
